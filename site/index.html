@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>html — static site</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <main class="page">
+      <header class="hero">
+        <p class="eyebrow">CCCCoder113 / html</p>
+        <h1>Static site is running</h1>
+        <p class="lede">
+          This project is served as plain HTML, CSS, and JavaScript from the
+          <code>site/</code> directory by a container defined in
+          <code>docker-compose.alloy.yaml</code>.
+        </p>
+      </header>
+
+      <section class="cards">
+        <article class="card">
+          <h2>Frontend</h2>
+          <p>Static files in <code>site/</code>, served on port <strong>3000</strong>.</p>
+        </article>
+        <article class="card">
+          <h2>Backend</h2>
+          <p>None required. There is no API or database in this repository.</p>
+        </article>
+        <article class="card">
+          <h2>Status</h2>
+          <p id="status" class="status">checking…</p>
+        </article>
+      </section>
+
+      <footer class="footer">
+        <span id="stamp"></span>
+      </footer>
+    </main>
+    <script src="./main.js"></script>
+  </body>
+</html>
